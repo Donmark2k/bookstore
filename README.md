@@ -70,18 +70,6 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
-
- <details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="#">Index.html</a></li>
-        <li><a href="#">main.js</a></li>
-            <li><a href="#">Style.css</a></li>
-
-
-  </ul>
-</details> 
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
