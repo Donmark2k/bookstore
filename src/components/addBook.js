@@ -2,9 +2,10 @@ import React from 'react';
 
 const AddBook = () => (
   <>
-    <h1>ADD NEW BOOK</h1>
+    <h3 className="bookH3">ADD NEW BOOK</h3>
     <form>
       <input type="text" placeholder="Book title" />
+      <input type="text" placeholder="author" />
 
       <select name="category">
         <option value="">Category</option>
@@ -16,7 +17,7 @@ const AddBook = () => (
 
       </select>
 
-      <button type="submit">ADD BOOK</button>
+      <button type="submit" className="addBtn">ADD BOOK</button>
 
     </form>
   </>

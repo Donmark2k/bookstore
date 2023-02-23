@@ -2,13 +2,15 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 import { FaUserAlt } from 'react-icons/fa';
 
+
 const NavBar = () => (
   <nav>
-    <h1> Bookstore CMS</h1>
 
-    <ul>
+    <ul className="navbar">
+      <h1> Bookstore CMS</h1>
+
       <li>
-        <Link to="/">BOOK</Link>
+        <Link to="/bookList">BOOK</Link>
       </li>
       <li>
         <Link to="/categories">CATEGORIES</Link>
@@ -16,14 +18,14 @@ const NavBar = () => (
 
     </ul>
     <span className="profile">
-        <FaUserAlt style={{
-          color: '#0290ff',
-          height: '15px',
-          cursor: 'pointer',
-          transition: 'all ease-in 300ms',
-        }}
-        />
-      </span>
+      <FaUserAlt style={{
+        color: '#0290ff',
+        height: '15px',
+        cursor: 'pointer',
+        transition: 'all ease-in 300ms',
+      }}
+      />
+    </span>
   </nav>
 );
 
