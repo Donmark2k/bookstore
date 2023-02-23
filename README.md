@@ -27,7 +27,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="https://cdn.icon-icons.com/icons2/3311/PNG/96/whiteboard_marker_blackboard_school_maths_board_teach_icon_209285.png" alt="logo" width="140"  height="auto" />
+  <img src="https://cdn.icon-icons.com/icons2/20/PNG/256/business_library_books_book_file_2328.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Microverse README Template</b></h3>
@@ -60,9 +60,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Maths Magicians project  <a name="about-project"></a>
+# 📖 BookStore project  <a name="about-project"></a>
 
-**Maths Magicians** is a Single Page App (SPA) that allows users to perform some basic calculations.
+**BookStore** is a Single Page App (SPA) that allows users to perform some basic calculations.
 
 
 ## 🛠 Built With <a name="built-with"></a>
