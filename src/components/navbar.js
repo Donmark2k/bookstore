@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
+import { FaUserAlt } from 'react-icons/fa';
 
 const NavBar = () => (
   <nav>
@@ -16,6 +17,15 @@ const NavBar = () => (
       </li>
 
     </ul>
+    <span className="profile">
+        <FaUserAlt style={{
+          color: '#0290ff',
+          height: '15px',
+          cursor: 'pointer',
+          transition: 'all ease-in 300ms',
+        }}
+        />
+      </span>
   </nav>
 );
 

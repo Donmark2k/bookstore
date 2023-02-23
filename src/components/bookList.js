@@ -2,11 +2,9 @@ import React from 'react';
 import AddBook from './addBook';
 
 const BookList = () => (
-    <>
-      <AddBook />
-    </>
-  );
-  
-
+  <>
+    <AddBook />
+  </>
+);
 
 export default BookList;
