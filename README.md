@@ -62,25 +62,13 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 BookStore project  <a name="about-project"></a>
 
-**BookStore** is a Single Page App (SPA) that allows users to perform some basic calculations.
+**BookStore** is a Single Page App (SPA) that allows users to add a book and delete a selected book .
 
 
 ## 🛠 Built With <a name="built-with"></a>
 - React
 
 ### Tech Stack <a name="tech-stack"></a>
-
-
- <details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="#">Index.html</a></li>
-        <li><a href="#">main.js</a></li>
-            <li><a href="#">Style.css</a></li>
-
-
-  </ul>
-</details> 
 
 <!-- Features -->
 
@@ -90,9 +78,7 @@ After you're finished please remove all the comments and instructions!
 - **[Create a git flow]**
 - **[Use functional Component]**
 - **[Use state and props]**
-- **[Use destructuring method]**
 - **[Use routing method]**
-- **[Test the functionality]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,7 +116,7 @@ Example command:
 
 ### Setup
 
-- Clone this repository to your desired folder: https://donmark2k.github.io/maths-magicians/.git
+- Clone this repository to your desired folder: https://donmark2k.github.io/bookstore/.git
 - Run npm install to install the dependencies.
 - Run npm start to start the app.
 
