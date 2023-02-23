@@ -1,10 +1,12 @@
 import React from 'react';
 import AddBook from './addBook';
 
-Const BookList = () => {
-    return (
-        <AddBook/>
-    )
-}
+const BookList = () => (
+    <>
+      <AddBook />
+    </>
+  );
+  
+
 
 export default BookList;
