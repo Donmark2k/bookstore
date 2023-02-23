@@ -17,13 +17,7 @@ const NavBar = () => (
 
     </ul>
     <span className="profile">
-      <FaUserAlt style={{
-        color: '#0290ff',
-        height: '15px',
-        cursor: 'pointer',
-        transition: 'all ease-in 300ms',
-      }}
-      />
+      <FaUserAlt />
     </span>
   </nav>
 );
