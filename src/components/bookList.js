@@ -1,9 +1,12 @@
 import React from 'react';
 import AddBook from './addBook';
+import Book from './Book';
+
 
 const BookList = () => (
   <>
-    <AddBook />
+  <Book/>
+  <AddBook />
   </>
 );
 
