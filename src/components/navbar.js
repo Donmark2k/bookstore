@@ -10,8 +10,6 @@ const NavBar = () => (
       <li>
         <Link to="/">BOOK</Link>
       </li>
-      <li>|</li>
-
       <li>
         <Link to="/categories">CATEGORIES</Link>
       </li>
