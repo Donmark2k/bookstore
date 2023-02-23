@@ -5,9 +5,14 @@ import NavBar from './components/navbar';
 function App() {
   return (
     <div className="App">
-    <>
-    <NavBar />
-    </>
+      <>
+        <NavBar />
+        <Routes>
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/quotes" element={<Quotes />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </>
     </div>
   );
 }

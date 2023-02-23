@@ -14,7 +14,7 @@ const NavBar = () => (
       <li>
         <Link to="/categories">CATEGORIES</Link>
       </li>
-     
+
     </ul>
   </nav>
 );
