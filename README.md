@@ -79,6 +79,7 @@ After you're finished please remove all the comments and instructions!
 - **[Use functional Component]**
 - **[Use state and props]**
 - **[Use routing method]**
+- **[Add a redux toolkit]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
