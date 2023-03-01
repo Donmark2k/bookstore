@@ -18,6 +18,7 @@ import Book from './Book';
 // export default BookList;
 const BookList = () => {
   const { books } = useSelector((state) => state);
+  console.log(books.books)
 
   return (
     <> 
