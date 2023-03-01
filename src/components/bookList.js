@@ -3,32 +3,21 @@ import { useSelector } from 'react-redux';
 import AddBook from './addBook';
 import Book from './Book';
 
-// const BookList = () => {
-//   const { books } = useSelector((state) => state);
-//    console.log(books);
-//   return (
-//     <>
-//       { books.map((book) => <Book key={book.item_id} title={book.title} author={book.author} />) }
-      
-
-//     </>
-//   );
-// };
-
-// export default BookList;
 const BookList = () => {
-  const { books } = useSelector((state) => state);
-  console.log(books.books)
+  const { books } = useSelector((state) => state.books);
 
   return (
-    <> 
-    <div>
-      { 
-        books.books.map((book) => 
-      <Book key={book.item_id} title={book.title} author={book.author}
-       />) 
+    <>
+      <div>
+        {
+        books.map((book) => (
+          <Book
+            key={book.item_id}
+            book={book}
+          />
+        ))
        }
-       </div>
+      </div>
       <AddBook />
 
     </>
@@ -36,4 +25,3 @@ const BookList = () => {
 };
 
 export default BookList;
-
