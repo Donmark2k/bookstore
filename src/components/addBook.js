@@ -33,10 +33,23 @@ const AddBook = () => {
     <>
       <h3 className="bookH3">ADD NEW BOOK</h3>
       <form>
-        <input type="text" placeholder="Book title" onChange={handleInputTitle} value={title} required />
-        <input type="text" placeholder="author" onChange={handleInputAuthor} value={author} required />
-        <button type="submit" className="addBtn" onClick={handleSubmit}>ADD BOOK</button>
-
+        <input
+          type="text"
+          placeholder="Book title"
+          onChange={handleInputTitle}
+          value={title}
+          required
+        />
+        <input
+          type="text"
+          placeholder="author"
+          onChange={handleInputAuthor}
+          value={author}
+          required
+        />
+        <button type="submit" className="addBtn" onClick={handleSubmit}>
+          ADD BOOK
+        </button>
       </form>
     </>
   );

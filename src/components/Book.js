@@ -17,20 +17,24 @@ const Book = ({ book }) => {
         <p>
           {' '}
           Title:
-          {' '}
           {title}
         </p>
         <p>
           {' '}
           Author:
-          {' '}
           {author}
         </p>
         <p>
           {' '}
           {category}
         </p>
-        <button type="button" onClick={() => handleDelete(item_id)} value="Remove">Remove</button>
+        <button
+          type="button"
+          onClick={() => handleDelete(item_id)}
+          value="Remove"
+        >
+          Remove
+        </button>
       </div>
     </>
   );

@@ -9,7 +9,14 @@ const Categories = () => {
   };
   return (
     <>
-      <button type="button" onClick={() => handleStatus()} className="statusBtn">CHECK STATUS </button>
+      <button
+        type="button"
+        onClick={() => handleStatus()}
+        className="statusBtn"
+      >
+        CHECK STATUS
+        {' '}
+      </button>
       <span>{status}</span>
     </>
   );
