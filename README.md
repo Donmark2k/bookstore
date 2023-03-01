@@ -80,6 +80,13 @@ After you're finished please remove all the comments and instructions!
 - **[Use state and props]**
 - **[Use routing method]**
 - **[Add a redux toolkit]**
+- **[Understand the concept of state management.]**
+- **[Use store, actions and reducers in React.]**
+- **[Understand the concept of state management.]**
+
+
+Connect React and Redux.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
