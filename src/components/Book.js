@@ -7,6 +7,7 @@ const Book = ({ book }) => {
   const {
     title, item_id, author, category,
   } = book;
+
   const dispatch = useDispatch();
   const handleDelete = (id) => {
     dispatch(removeBook({ id }));
