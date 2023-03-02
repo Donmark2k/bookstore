@@ -13,7 +13,6 @@ const BookList = () => {
     dispatch(fetchBook());
   }, []);
 
-  
   return (
     <>
       <div>

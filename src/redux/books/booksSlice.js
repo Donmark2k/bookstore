@@ -21,6 +21,23 @@ export const fetchBook = createAsyncThunk('books/fetchBook', async () => {
   return books;
 });
 
+export const addBook = createAsyncThunk('books/addBook', async (payload, thunkAPI) => {
+  await fetch(`${url}`, {
+    method: 'POST',
+    body: JSON.stringify({
+      item_id: payload.id,
+      title: payload.title,
+      author: payload.author,
+      category: payload.category,
+    }),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  }).then(() => thunkAPI.dispatch(fetchBook()));
+  const { books } = thunkAPI.getState().books;
+  return books;
+});
+
 const bookSlice = createSlice({
   name: 'books',
   initialState,
@@ -30,6 +47,10 @@ const bookSlice = createSlice({
       const updatedState = state;
       const newStore = action.payload[0];
       updatedState.books = newStore;
+    },
+    [addBook.fulfilled]: (state, action) => {
+      const updatedState = state;
+      updatedState.books = action.payload;
     },
   }
 });
