@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/booksSlice';
 
-// import AddBtn from './button/addButton'
-
 const AddBook = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');

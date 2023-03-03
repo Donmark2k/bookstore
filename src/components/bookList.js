@@ -10,7 +10,7 @@ const BookList = () => {
 
   useEffect(() => {
     dispatch(fetchBook());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>

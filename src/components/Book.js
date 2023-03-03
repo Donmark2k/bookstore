@@ -43,7 +43,6 @@ Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   book: PropTypes.string.isRequired,
-  // category: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
 };
 
