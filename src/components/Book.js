@@ -1,4 +1,5 @@
-/* eslint-disable camelcase */
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/booksSlice';
@@ -8,6 +9,7 @@ const Book = ({ book }) => {
     title, id, author, category,
   } = book;
   const dispatch = useDispatch();
+  const chapterComp = Math.round(Math.random() * 20);
 
   return (
     <>
@@ -41,9 +43,24 @@ const Book = ({ book }) => {
             <button type="button">Edit</button>
           </div>
         </div>
+
+        <div className="circle-container">
+          <div className="circle" style={{ width: 100, height: 100 }}>
+            <CircularProgressbar value={Math.round((chapterComp / 20) * 100)} />
+
+          </div>
+          <div className="circle-text">
+            <p className="percentage">
+              {Math.round((chapterComp / 20) * 100)}
+              %
+            </p>
+            <p className="completedText">Completed</p>
+          </div>
+        </div>
+
         <div className="chapterContainer">
           <p className="currentChapter">CURRENT CHAPTER</p>
-          <p className="chapterNo">Chapter 3: "A Lesson Learned"</p>
+          <p className="chapterNo">Chapter 3: `&quot;`A Lesson Learned`&quot;`</p>
           <button type="button" className="chapterBtn">UPDATE PROGRESS</button>
         </div>
       </div>
