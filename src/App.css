@@ -102,12 +102,11 @@ input, select {
 .bookContainer {
   background-color: white;
   margin: 1.438rem 7.5rem 1.688rem 7.5rem;
+  border: 1px solid #888;
+  padding: 1.438rem 1.5rem;
   border-radius: 10px;
-}
-.bookDetails {
-padding: 1.438rem 1.5rem;
-border: 1px solid #888;
-border-radius: 10px; 
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {
@@ -144,4 +143,30 @@ border: none;
 color: #4386bf;
 background: none;
 cursor: pointer;
+}
+
+.chapterBtn {
+  width: 100%;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  background-color: #0290ff;
+  color: #fff;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.currentChapter {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+}
+
+.chapterNo {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+  color: #000;
+  margin: 10px 0 20px 0;
 }

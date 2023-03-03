@@ -42,10 +42,10 @@ const Book = ({ book }) => {
           </div>
         </div>
         <div className="chapterContainer">
-                <p className="currentChapter">CURRENT CHAPTER</p>
-                <p className="chapterNo">Chapter 17</p>
-                <button type="button" className="chapterBtn">UPDATE PROGRESS</button>
-              </div>
+          <p className="currentChapter">CURRENT CHAPTER</p>
+          <p className="chapterNo">Chapter 3: "A Lesson Learned"</p>
+          <button type="button" className="chapterBtn">UPDATE PROGRESS</button>
+        </div>
       </div>
     </>
   );
