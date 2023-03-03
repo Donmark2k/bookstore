@@ -7,7 +7,6 @@ const Book = ({ book }) => {
   const {
     title, id, author, category,
   } = book;
- console.log(book);
   const dispatch = useDispatch();
  
   return (
