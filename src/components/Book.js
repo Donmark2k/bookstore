@@ -45,7 +45,7 @@ const Book = ({ book }) => {
         </div>
 
         <div className="circle-container">
-          <div className="circle" style={{ width: 100, height: 100 }}>
+          <div className="circle" style={{ width: 80, height: 80 }}>
             <CircularProgressbar value={Math.round((chapterComp / 20) * 100)} />
 
           </div>
