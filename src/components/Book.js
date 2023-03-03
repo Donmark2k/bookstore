@@ -24,6 +24,7 @@ const Book = ({ book }) => {
         </p>
         <p>
           {' '}
+          Category:
           {category}
         </p>
         <button

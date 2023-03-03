@@ -52,6 +52,7 @@ const bookSlice = createSlice({
 
     builder.addCase(addBook.fulfilled, (state, action) => {
       const item = action.payload;
+      console.log(item)
       state.books.push(item);
     });
 
