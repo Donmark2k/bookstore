@@ -45,24 +45,24 @@ const Book = ({ book }) => {
         </div>
         <div className="updateContainer">
 
-        <div className="circle-container">
-          <div className="circle" style={{ width: 80, height: 80 }}>
-            <CircularProgressbar value={Math.round((chapterComp / 20) * 100)} />
+          <div className="circle-container">
+            <div className="circle" style={{ width: 80, height: 80 }}>
+              <CircularProgressbar value={Math.round((chapterComp / 20) * 100)} />
 
+            </div>
+            <div className="circle-text">
+              <p className="percentage">
+                {Math.round((chapterComp / 20) * 100)}
+                %
+              </p>
+              <p className="completedText">Completed</p>
+            </div>
           </div>
-          <div className="circle-text">
-            <p className="percentage">
-              {Math.round((chapterComp / 20) * 100)}
-              %
-            </p>
-            <p className="completedText">Completed</p>
+          <div className="chapterContainer">
+            <p className="currentChapter">CURRENT CHAPTER</p>
+            <p className="chapterNo">Chapter 3: `&quot;`A Lesson Learned`&quot;`</p>
+            <button type="button" className="chapterBtn">UPDATE PROGRESS</button>
           </div>
-        </div>
-        <div className="chapterContainer">
-          <p className="currentChapter">CURRENT CHAPTER</p>
-          <p className="chapterNo">Chapter 3: `&quot;`A Lesson Learned`&quot;`</p>
-          <button type="button" className="chapterBtn">UPDATE PROGRESS</button>
-        </div>
         </div>
       </div>
     </>
