@@ -86,10 +86,6 @@ After you're finished please remove all the comments and instructions!
 - **[Connect an existing API via Redux and use the data to display something in a UI.]**
 
 
-
-Connect React and Redux.
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
