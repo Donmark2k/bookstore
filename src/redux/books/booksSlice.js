@@ -57,6 +57,21 @@ const bookSlice = createSlice({
           updatedState.books = newStore;
     });
     
+    builder.addCase(addBook.fulfilled, (state, action) => {
+      const { item } = action.payload;
+      const newItem = [
+        item.item_id,
+        [
+          {
+            author: item.author,
+            title: item.title,
+            category: item.category,
+          },
+        ],
+      ];
+      state.books.push(newItem);
+    });
+
     builder.addCase(removeBook.fulfilled, (state, action) => {
       const id = action.payload;
       const newState = { ...state };
