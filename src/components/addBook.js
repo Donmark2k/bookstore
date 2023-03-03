@@ -21,9 +21,11 @@ const AddBook = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const uniqueId = uuidv4();
+    const sentId = uniqueId.slice(0, 6);
     if (title && author) {
       const newBook = {
-        item_id: uuidv4(),
+        item_id: sentId,
         title,
         author,
         category: 'Fiction',
