@@ -6,7 +6,7 @@ import { addBook } from '../redux/books/booksSlice';
 const AddBook = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-  const [category, Setcategory] = useState('');
+  const [category, setCategory] = useState('');
 
   const dispatch = useDispatch();
 
@@ -19,7 +19,7 @@ const AddBook = () => {
   };
 
   const handleCategory = (e) => {
-    setAuthor(e.target.value);
+    setCategory(e.target.value);
   };
 
   const handleSubmit = (e) => {

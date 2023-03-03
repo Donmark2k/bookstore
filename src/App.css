@@ -52,7 +52,7 @@ ul.navbar li a {
 }
 form {
   display: flex;
-  flex-direction: row;
+  flex-direction: auto;
   width: 100%;
   justify-content: space-between;
   padding: 1.438rem 7.5rem 1.688rem 7.5rem;
