@@ -82,10 +82,8 @@ After you're finished please remove all the comments and instructions!
 - **[Add a redux toolkit]**
 - **[Understand the concept of state management.]**
 - **[Use store, actions and reducers in React.]**
-- **[Understand the concept of state management.]**
-
-
-Connect React and Redux.
+- **[Connect React and Redux]**
+- **[Connect an existing API via Redux and use the data to display something in a UI.]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -128,6 +126,16 @@ Example command:
 - Run npm install to install the dependencies.
 - Run npm start to start the app.
 
+### Install
+Install this project with:
+
+-  cd bookstore
+-  node version 16 or higher
+
+### Usage
+To run the project, execute the following command:
+
+- npm start
 
 ### Run tests
 
