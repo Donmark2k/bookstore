@@ -44,10 +44,14 @@ ul.navbar li a {
   padding: 12px;
 }
 .bookH3 {
-  padding-left: 7.5rem;
   font-size: 1.25rem;
   font-weight: bold;
   color: #888;
+  margin: 1.438rem 7.5rem 0.5rem 7.5rem;
+  padding-top:1.438rem;
+  border-top: 2px solid #888;
+
+
 }
 form {
   display: grid;
@@ -108,6 +112,8 @@ select {
 }
 .bookDetails {
 padding: 1.438rem 1.5rem;
+border: 1px solid #888;
+border-radius: 10px; 
 }
 
 .title {
