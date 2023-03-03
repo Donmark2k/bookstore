@@ -7,7 +7,6 @@ import { v4 as uuidv4 } from 'uuid';
 // import AddBtn from './button/addButton'
 
 const AddBook = () => {
-  const books = useSelector((state) => state.books.books);
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
 
@@ -22,10 +21,15 @@ const AddBook = () => {
   };
 
   const handleSubmit = (e) => {
-    const itemId = `item${books.length + 1}`;
     e.preventDefault();
     if (title && author) {
-      dispatch(addBook({ item_id: itemId, title, author }));
+      const newBook = {
+        item_id: uuidv4(),
+        title: '',
+        author: '',
+      };
+
+      dispatch(addBook(newBook));
       setTitle('');
       setAuthor('');
     }
@@ -38,6 +42,7 @@ const AddBook = () => {
         <input
           type="text"
           placeholder="Book title"
+          name="title"
           onChange={handleInputTitle}
           value={title}
           required
@@ -47,6 +52,8 @@ const AddBook = () => {
           placeholder="author"
           onChange={handleInputAuthor}
           value={author}
+          name="author"
+
           required
         />
         <button type="submit" className="addBtn" onClick={handleSubmit}>
