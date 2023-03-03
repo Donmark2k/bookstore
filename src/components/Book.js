@@ -31,7 +31,6 @@ const Book = ({ book }) => {
           onClick={() =>
             
             {
-              console.log(id);
                dispatch(removeBook(id)); }}
           value="Remove"
         >
