@@ -43,6 +43,7 @@ const Book = ({ book }) => {
             <button type="button">Edit</button>
           </div>
         </div>
+        <div className="updateContainer">
 
         <div className="circle-container">
           <div className="circle" style={{ width: 80, height: 80 }}>
@@ -57,11 +58,12 @@ const Book = ({ book }) => {
             <p className="completedText">Completed</p>
           </div>
         </div>
-
+         <span className="bar">|</span>
         <div className="chapterContainer">
           <p className="currentChapter">CURRENT CHAPTER</p>
           <p className="chapterNo">Chapter 3: `&quot;`A Lesson Learned`&quot;`</p>
           <button type="button" className="chapterBtn">UPDATE PROGRESS</button>
+        </div>
         </div>
       </div>
     </>
