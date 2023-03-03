@@ -58,7 +58,6 @@ const Book = ({ book }) => {
             <p className="completedText">Completed</p>
           </div>
         </div>
-         <span className="bar">|</span>
         <div className="chapterContainer">
           <p className="currentChapter">CURRENT CHAPTER</p>
           <p className="chapterNo">Chapter 3: `&quot;`A Lesson Learned`&quot;`</p>
