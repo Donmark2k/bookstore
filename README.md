@@ -82,7 +82,9 @@ After you're finished please remove all the comments and instructions!
 - **[Add a redux toolkit]**
 - **[Understand the concept of state management.]**
 - **[Use store, actions and reducers in React.]**
-- **[Understand the concept of state management.]**
+- **[Connect React and Redux]**
+- **[Connect an existing API via Redux and use the data to display something in a UI.]**
+
 
 
 Connect React and Redux.
