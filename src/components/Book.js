@@ -12,6 +12,12 @@ const Book = ({ book }) => {
   return (
     <>
       <div>
+        < div className="bookDetails">
+      <p>
+          {' '}
+          Category:
+          {category}
+        </p>
         <p>
           {' '}
           Title:
@@ -22,11 +28,9 @@ const Book = ({ book }) => {
           Author:
           {author}
         </p>
-        <p>
-          {' '}
-          Category:
-          {category}
-        </p>
+        <div className="buttonBox" >
+        <button>Comment</button>
+
         <button
           type="button"
           onClick={() => {
@@ -36,6 +40,9 @@ const Book = ({ book }) => {
         >
           Remove
         </button>
+        <button>Edit</button>
+        </div>
+        </div>
       </div>
     </>
   );
