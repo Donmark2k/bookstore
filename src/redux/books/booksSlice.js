@@ -10,8 +10,6 @@ const initialState = {
 export const fetchBook = createAsyncThunk('books/fetchBook', async () => {
   const res = await fetch(url);
   const data = await res.json();
-  // console.log(data)
-
   const books = [
     Object.keys(data).map((key) => ({
       id: key,
@@ -39,8 +37,6 @@ export const addBook = createAsyncThunk('books/addBook', async (payload, thunkAP
 });
 
 export const removeBook = createAsyncThunk('removeBook', async (id) => {
-  // console.log(id)
-
   await fetch(`${url}/${id}`, {
     method: 'DELETE',
     headers: {
