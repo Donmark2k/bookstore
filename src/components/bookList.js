@@ -4,7 +4,6 @@ import AddBook from './addBook';
 import Book from './Book';
 import { fetchBook } from '../redux/books/booksSlice';
 
-
 const BookList = () => {
   const { books } = useSelector((state) => state.books);
   const dispatch = useDispatch();

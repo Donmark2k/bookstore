@@ -8,7 +8,7 @@ const Book = ({ book }) => {
     title, id, author, category,
   } = book;
   const dispatch = useDispatch();
- 
+
   return (
     <>
       <div>
@@ -28,10 +28,9 @@ const Book = ({ book }) => {
         </p>
         <button
           type="button"
-          onClick={() =>
-            
-            {
-               dispatch(removeBook(id)); }}
+          onClick={() => {
+            dispatch(removeBook(id));
+          }}
           value="Remove"
         >
           Remove
@@ -45,7 +44,7 @@ Book.propTypes = {
   author: PropTypes.string.isRequired,
   book: PropTypes.string.isRequired,
   // category: PropTypes.string.isRequired,
-  item_id: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Book;
