@@ -84,6 +84,7 @@ After you're finished please remove all the comments and instructions!
 - **[Use store, actions and reducers in React.]**
 - **[Connect React and Redux]**
 - **[Connect an existing API via Redux and use the data to display something in a UI.]**
+- **[Apply React best practices and language style guides in code.]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
