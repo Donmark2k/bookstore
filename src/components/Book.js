@@ -11,37 +11,35 @@ const Book = ({ book }) => {
 
   return (
     <>
-      <div>
-        < div className="bookDetails">
-      <p>
-          {' '}
-          Category:
-          {category}
-        </p>
-        <p>
-          {' '}
-          Title:
-          {title}
-        </p>
-        <p>
-          {' '}
-          Author:
-          {author}
-        </p>
-        <div className="buttonBox" >
-        <button>Comment</button>
-
-        <button
-          type="button"
-          onClick={() => {
-            dispatch(removeBook(id));
-          }}
-          value="Remove"
-        >
-          Remove
-        </button>
-        <button>Edit</button>
-        </div>
+      <div className="bookContainer">
+        <div className="bookDetails">
+          <p className="category">
+            {' '}
+            {category}
+          </p>
+          <p className="title">
+            {' '}
+            {title}
+          </p>
+          <p className="author">
+            {' '}
+            {author}
+          </p>
+          <div className="buttonBox">
+            <button type="button">Comment</button>
+            <span>|</span>
+            <button
+              type="button"
+              onClick={() => {
+                dispatch(removeBook(id));
+              }}
+              value="Remove"
+            >
+              Remove
+            </button>
+            <span>|</span>
+            <button type="button">Edit</button>
+          </div>
         </div>
       </div>
     </>
@@ -53,7 +51,6 @@ Book.propTypes = {
   book: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
-
 };
 
 export default Book;
